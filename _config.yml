@@ -1,0 +1,42 @@
+title: "Personal Homepage"
+description: "A minimal and elegant personal homepage"
+author: "samualMa"
+email: "your-email@example.com"
+baseurl: ""
+url: "https://samualMa.github.io"
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
+highlighter: rouge
+
+timezone: UTC
+future: false
+show_drafts: false
+
+include:
+  - .htaccess
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .git
+  - .gitignore
+  - README.md
+
+output: web
+permalink: /:categories/:year/:month/:day/:title.html
+
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+custom_variables:
+  github_username: "samualMa"
+  twitter_username: "your_twitter"
+  linkedin_profile: "your_linkedin"
